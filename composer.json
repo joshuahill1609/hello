@@ -1,0 +1,29 @@
+{
+    "name": "jjh/hello",
+    "description": "A simple Laravel Package",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Josh Hill",
+            "email": "josh@wisetail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "jjh\\Hello\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "jjh\\Hello\\HelloServiceProvider"
+            ],
+            "aliases": {
+                "Hello": "jjh\\Hello\\HelloFacade"
+            }
+        }
+    }
+}
